@@ -1,6 +1,6 @@
 function MainTitle(){
     return(
-        <div>
+        <div className="main_title_bg">
 
         </div>
     )

@@ -67,3 +67,8 @@ button {
 button:hover {
   background-color: var(--button-hover-color); /* 호버 색상 */
 }
+
+h1{
+  font-family: "SCDeram9", serif;
+  margin: 0;
+}
