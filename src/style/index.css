@@ -1,8 +1,69 @@
+@font-face {
+  font-family: "SCDeram1";
+  src:url("../assets/fonts/SCDream1.otf");
+}
+@font-face {
+  font-family: "SCDeram2";
+  src:url("../assets/fonts/SCDream2.otf");
+}
+@font-face {
+  font-family: "SCDeram3";
+  src:url("../assets/fonts/SCDream3.otf");
+}
+@font-face {
+  font-family: "SCDeram4";
+  src:url("../assets/fonts/SCDream4.otf");
+}
+@font-face {
+  font-family: "SCDeram5";
+  src:url("../assets/fonts/SCDream5.otf");
+}
+@font-face {
+  font-family: "SCDeram6";
+  src:url("../assets/fonts/SCDream6.otf");
+}
+@font-face {
+  font-family: "SCDeram7";
+  src:url("../assets/fonts/SCDream7.otf");
+}
+@font-face {
+  font-family: "SCDeram8";
+  src:url("../assets/fonts/SCDream8.otf");
+}
+@font-face {
+  font-family: "SCDeram9";
+  src:url("../assets/fonts/SCDream9.otf");
+}
+
 :root {
+  --background-color: #181818; /* 배경*/
+  --text-color: #f5f5f5; /* 텍스트*/
+  --accent-color: #9d4edd; /* 강조색*/
+  --button-color: #7b2cbf; /* 버튼 기본 */
+  --button-hover-color: #c77dff; /* 버튼 호버 */
+
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #181818;
+
+  font-family: "SCDeram4", serif;
 }
+
 body{
   margin: 0;
+}
+
+button {
+  background-color: var(--button-color); /* 기본 색상 */
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-size: 0.8rem;
+}
+
+button:hover {
+  background-color: var(--button-hover-color); /* 호버 색상 */
 }
