@@ -6,9 +6,7 @@ import Skill from "../page/Skill.jsx";
 import Project from "../page/Project.jsx";
 import SubProject from "../page/SubProject.jsx";
 import Contact from "../page/Contact.jsx";
-import {HeaderBar} from "../components/HeaderBar.jsx";
 
-import * as React from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
@@ -25,10 +23,22 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import {useState} from "react";
-import {Container} from "@mui/material";
+import {Container, ListItemIcon} from "@mui/material";
+
+import HomeIcon from '@mui/icons-material/Home';
+import BuildIcon from '@mui/icons-material/Build';
+import CodeIcon from '@mui/icons-material/Code';
+import FolderIcon from '@mui/icons-material/Folder';
+import ContactMailIcon from '@mui/icons-material/ContactMail';
 
 const drawerWidth = 240;
-const navItems = ['HOME', 'SERVICE', 'SKILL', 'PROJECT', 'CONTACT'];
+const navItems = [
+    { label: 'HOME', icon: <HomeIcon /> },
+    { label: 'SERVICE', icon: <BuildIcon /> },
+    { label: 'SKILL', icon: <CodeIcon /> },
+    { label: 'PROJECT', icon: <FolderIcon /> },
+    { label: 'CONTACT', icon: <ContactMailIcon /> },
+];
 
 function DashBoard(props) {
     const {window} = props;
@@ -39,16 +49,19 @@ function DashBoard(props) {
     };
 
     const drawer = (
-        <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-            <Typography variant="h6" sx={{my: 2}}>
-                KIMJIHEE
+        <Box sx={{ textAlign: 'left' }}>
+            <Typography variant="h6" sx={{ my: 2, marginLeft: 3}}>
+                PORT<strong>FOLIO</strong>
             </Typography>
-            <Divider/>
+            <Divider />
             <List>
                 {navItems.map((item) => (
-                    <ListItem key={item} disablePadding>
-                        <ListItemButton sx={{textAlign: 'center'}}>
-                            <ListItemText primary={item}/>
+                    <ListItem key={item.label} disablePadding>
+                        <ListItemButton sx={{ textAlign: 'center' }}>
+                            <ListItemIcon>
+                                {item.icon} {/* 아이콘 렌더링 */}
+                            </ListItemIcon>
+                            <ListItemText primary={item.label} /> {/* 텍스트 렌더링 */}
                         </ListItemButton>
                     </ListItem>
                 ))}
@@ -75,14 +88,14 @@ function DashBoard(props) {
                     <Typography
                         variant="h6"
                         component="div"
-                        sx={{flexGrow: 1, display: {xs: 'none', sm: 'block'}}}
+                        sx={{flexGrow: 1, display: {xs: 'none', sm: 'block'} }}
                     >
-                        PORT<strong>FOLIO</strong>
+                        PORT<strong style={{color: '#ca6378'}}>FOLIO</strong>
                     </Typography>
                     <Box sx={{display: {xs: 'none', sm: 'block'}}}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{color: '#fff'}}>
-                                {item}
+                            <Button key={item.label} sx={{ color: '#fff' }}>
+                                {item.label} {/* 아이템의 텍스트만 렌더링 */}
                             </Button>
                         ))}
                     </Box>
