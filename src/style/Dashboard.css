@@ -3,7 +3,7 @@
     border-top: 1px solid rgba(255, 255, 255, 0.65);
     border-bottom: 1px solid rgba(255, 255, 255, 0.65);
     /*background-color: #7b2cbf;*/
-   padding-left: 20px;
+    padding-left: 20px;
     padding-right: 20px;
 }
 .circle-container {
@@ -52,4 +52,35 @@
 }
 .introduce-text small{
     color: rgba(245, 245, 245, 0.79);
+}
+
+
+
+/***** service ***/
+.main-service h1{
+    text-align: center;
+}
+
+@media all and (min-width:1024px) and (max-width:1279px) {
+
+}
+
+/* 테블릿 가로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+
+}
+
+/* 모바일 가로 & 테블릿 세로 (해상도 480px ~ 767px)*/
+@media all and (min-width:480px) and (max-width:767px) {
+    .title-grid{
+        height: 550px;
+    }
+}
+
+/* 모바일 세로 (해상도 ~ 479px)*/
+@media all and (max-width:479px) {
+    .title-grid{
+        height: 550px;
+    }
+
 }

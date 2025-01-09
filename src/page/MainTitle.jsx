@@ -11,7 +11,7 @@ function MainTitle() {
     return (
         <div className="main_title_bg">
             <Grid container>
-                <Grid item xs={12} md={8} sx={{mt: 13}}>
+                <Grid item xs={12} md={8} sx={{mt: 3}}>
                     <div className="title-grid">
                         <div className="circle-container">
                             <Grid container>
@@ -29,7 +29,7 @@ function MainTitle() {
                         </div>
                     </div>
                 </Grid>
-                <Grid item xs={12} md={4} sx={{mt: 13, display: {xs: 'none' ,md: 'block'}}}>
+                <Grid item xs={12} md={4} sx={{mt: 3, display: {xs: 'none' ,md: 'block'}}}>
                     <div className="title-grid">
 
                         <div className="circle-container">
@@ -46,16 +46,31 @@ function MainTitle() {
 }
 
 const SiteTitle = () => {
+    const handleGithubOpen = () => {
+        window.open('https://github.com/JIHEE-Princess98')
+    }
+    const handleNotionOpen = () => {
+        window.open('https://www.notion.so/FrontEnd-10ef3185ddac4e3f84b601aa9805a679')
+    }
+    const handleTstoryOpen = () => {
+        window.open('https://kimjihee1113.tistory.com/');
+    }
+
     return (
         <Box sx={{ml: 2}}>
-            <IconButton aria-label="delete" size="large">
-                {/*<GitHubIcon fontSize="inherit" />*/}
+            <IconButton aria-label="delete" size="large"
+                onClick={handleGithubOpen}
+            >
                 <FaGithub fontSize="inherit"/>
             </IconButton>
-            <IconButton aria-label="delete" size="large">
+            <IconButton aria-label="delete" size="large"
+                onClick={handleNotionOpen}
+            >
                 <SiNotion fontSize="inherit"/>
             </IconButton>
-            <IconButton aria-label="delete" size="large">
+            <IconButton aria-label="delete" size="large"
+                onClick={handleTstoryOpen}
+            >
                 <FaBloggerB fontSize="inherit"/>
             </IconButton>
         </Box>
@@ -107,9 +122,9 @@ const Introduce = () => {
 
 const ContactButton = () => {
     return (
-        <div>
-
-        </div>
+        <Box sx={{ml: 3, mt: 2}}>
+            <button> CONTACT </button>
+        </Box>
     )
 }
 

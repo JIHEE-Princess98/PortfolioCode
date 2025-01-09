@@ -18,6 +18,18 @@ export const darkTheme = createTheme({
             main: '#cc5f75', // 버튼 호버 또는 보조 강조색
         },
     },
+    typography: {
+        fontFamily: 'SCDeram4, Arial, sans-serif', // 기본 폰트 설정
+        h1: {
+            fontFamily: 'SCDeram4, sans-serif', // 특정 폰트
+            fontSize: '2.5rem',
+            fontWeight: 700,
+        },
+        body1: {
+            fontSize: '1rem',
+            lineHeight: 1.5,
+        },
+    },
     components: {
         MuiButton: {
             styleOverrides: {
