@@ -36,15 +36,16 @@
 }
 
 :root {
-  --background-color: #181818; /* 배경*/
+  --background-color: #262737; /* 배경*/
+  --background-sub-color:#292a3b; /* 배경 서브 컬러*/
   --text-color: #f5f5f5; /* 텍스트*/
-  --accent-color: #9d4edd; /* 강조색*/
-  --button-color: #7b2cbf; /* 버튼 기본 */
-  --button-hover-color: #c77dff; /* 버튼 호버 */
+  --accent-color: #d75a60; /* 강조색*/
+  --button-color: #ca6378; /* 버튼 기본 */
+  --button-hover-color: #cc5f75; /* 버튼 호버 */
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #181818;
+  background-color: #262737;
 
   font-family: "SCDeram4", serif;
 }
