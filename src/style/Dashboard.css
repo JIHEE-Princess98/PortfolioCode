@@ -74,6 +74,13 @@
 }
 
 
+/*** project ***/
+.main-project h1{
+    text-align: center;
+    padding-top: 20px;
+}
+
+
 @media all and (min-width:1024px) and (max-width:1279px) {
 
 }

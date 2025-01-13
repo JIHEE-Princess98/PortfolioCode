@@ -7,7 +7,6 @@ function Skill() {
             <h1>SKILL</h1>
             <Frontend/>
             <Backend/>
-
         </div>
     )
 }
