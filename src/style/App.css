@@ -23,10 +23,19 @@
 
 .main-project{
     width: 100%;
-    height: 850px;
+    height: 1950px;
     padding: 10px;
     /*background-color: var(--background-sub-color); !* 기본 색상 *!*/
     margin-top: 10px;
+}
+
+.main-contact{
+    width: 100%;
+    height: 250px;
+    padding: 10px;
+    background-color: var(--background-sub-color); /* 기본 색상 */
+    margin-top: 10px;
+    margin-bottom: 50px;
 }
 
 @media all and (min-width:1024px) and (max-width:1279px) {

@@ -190,4 +190,106 @@ export const projectItem = [
             }
         ]
     },
+    {
+        project_id: 5,
+        project_type: "BackEnd",
+        project_name: "인천 GIS 모니터링 서비스",
+        project_SubName: "GIS 관제 서비스",
+        project_explan: [
+            {
+                ex_id: 1,
+                ex_content: '크롤링 기반 실시간 악취데이터 수집 및 데이터베이스 제작 적용'
+            }
+        ],
+        project_lang: [
+            {
+                lang_id: 1,
+                lang_type: "Node.js",
+                lang_color: 0, // 0강조 , 1 미강조
+            },
+            {
+                lang_id: 2,
+                lang_type: "Express.js",
+                lang_color: 1,
+            },
+            {
+                lang_id: 3,
+                lang_type: "PostgreSQL",
+                lang_color: 0,
+            },
+            {
+                lang_id: 3,
+                lang_type: "http.request",
+                lang_color: 1,
+            },
+            {
+                lang_id: 3,
+                lang_type: "Promise",
+                lang_color: 1,
+            }
+        ]
+    },
+    {
+        project_id: 6,
+        project_type: "F/E , B/E",
+        project_name: "모니터링 점검 시스템",
+        project_SubName: "납품된 모니터링 실시간 상태현황 점검",
+        project_explan: [
+            {
+                ex_id: 1,
+                ex_content: '개발 설계 문서 제작'
+            },
+            {
+                ex_id: 2,
+                ex_content: '데이터베이스 설계 및 제작'
+            },
+            {
+                ex_id: 3,
+                ex_content: '납품 모니터링 셀레니움 실시간 크롤링'
+            },
+            {
+                ex_id: 4,
+                ex_content: '크롤링 점검 확인에 따른 텔레그램 알림 봇 생성'
+            },
+            {
+                ex_id: 5,
+                ex_content: 'SSE 서버 연동 및 API 제작'
+            },
+            {
+                ex_id: 6,
+                ex_content: 'UI 디자인 설계 제작'
+            },
+            {
+                ex_id: 7,
+                ex_content: '프론트엔드 제작 및 RestAPI 연동'
+            }
+        ],
+        project_lang: [
+            {
+                lang_id: 1,
+                lang_type: "Node.js",
+                lang_color: 0, // 0강조 , 1 미강조
+            },
+            {
+                lang_id: 2,
+                lang_type: "Express.js",
+                lang_color: 1,
+            },
+            {
+                lang_id: 3,
+                lang_type: "PostgreSQL",
+                lang_color: 0,
+            },
+            {
+                lang_id: 4,
+                lang_type: "Selenium",
+                lang_color: 0,
+            },
+            {
+                lang_id: 3,
+                lang_type: "React.js",
+                lang_color: 0,
+            },
+        ]
+    },
 ]

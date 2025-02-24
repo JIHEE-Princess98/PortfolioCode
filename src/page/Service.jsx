@@ -27,9 +27,9 @@ function Service(){
                                 디자인을 제작 추출을 합니다.
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small">Learn More</Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
 
@@ -50,9 +50,9 @@ function Service(){
                                 할 수 있습니다.
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small">Learn More</Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
 
@@ -72,9 +72,9 @@ function Service(){
                                 Ajax 위한 axios,fetch,http.request,Promise 등 서버와의 통신방식을 사용합니다.
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small">Learn More</Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
 
@@ -94,9 +94,9 @@ function Service(){
                                 Ajax 위한 axios,fetch,http.request,Promise 등 서버와의 통신방식을 사용합니다.
                             </Typography>
                         </CardContent>
-                        <CardActions>
-                            <Button size="small">Learn More</Button>
-                        </CardActions>
+                        {/*<CardActions>*/}
+                        {/*    <Button size="small">Learn More</Button>*/}
+                        {/*</CardActions>*/}
                     </Card>
                 </Grid>
 

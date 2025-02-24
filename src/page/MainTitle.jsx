@@ -5,7 +5,7 @@ import {FaGithub} from "react-icons/fa";
 import {SiNotion} from "react-icons/si";
 import {FaBloggerB} from "react-icons/fa";
 import Box from "@mui/material/Box";
-import {useEffect, useState} from "react";
+import {useEffect, useRef, useState} from "react";
 
 function MainTitle() {
     return (
@@ -121,9 +121,10 @@ const Introduce = () => {
 }
 
 const ContactButton = () => {
+
     return (
         <Box sx={{ml: 3, mt: 2}}>
-            <button> CONTACT </button>
+            {/*<button> CONTACT </button>*/}
         </Box>
     )
 }

@@ -23,10 +23,10 @@ function Project() {
                                         direction="row"
                                         sx={{justifyContent: 'space-between', alignItems: 'center'}}
                                     >
-                                        <Typography gutterBottom variant="h5" component="div">
-                                            {item.project_name}
+                                        <Typography gutterBottom variant="p" component="div">
+                                            <strong>{item.project_name}</strong>
                                         </Typography>
-                                        <Typography gutterBottom variant="h6" component="div">
+                                        <Typography gutterBottom variant="p" component="div">
                                             {item.project_type}
                                         </Typography>
                                     </Stack>
@@ -50,18 +50,16 @@ function Project() {
                                         사용언어
                                     </Typography>
                                     <Stack direction="row" spacing={1} sx={{mt: 1}}>
-                                        {item.project_lang.map((lang) => (
-
+                                        {item.project_lang.map((lang, index) => (
                                             <Chip
                                                 color={lang.lang_color === 0 ? "primary" : ""}
                                                 key={lang.lang_id}
                                                 label={lang.lang_type}
                                                 size="small"
                                             />
-
                                         ))}
-                                    </Stack>
 
+                                    </Stack>
                                 </Box>
                             </Card>
                         </Grid>
